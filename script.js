@@ -2,15 +2,15 @@
 // DATA
 // ===============================
 const dresses = [
-  { id: "dress1", name: "Golden Leaf Couture Dress", imageSrc: "assets/dresses/dress1.png" },
-  { id: "dress2", name: "Crystal Blossom Gown", imageSrc: "assets/dresses/dress2.png" },
-  { id: "dress3", name: "Black Royal Cape Gown", imageSrc: "assets/dresses/dress3.png" },
-  { id: "dress4", name: "Sculpted Silver Asymmetric Gown", imageSrc: "assets/dresses/dress4.png" },
-  { id: "dress5", name: "Chocolate Sequin Ball Gown", imageSrc: "assets/dresses/dress5.png" },
-  { id: "dress6", name: "Ivory Floral Lace Couture Dress", imageSrc: "assets/dresses/dress6.png" },
-  { id: "dress7", name: "Rose Gold Shimmer Cape Dress", imageSrc: "assets/dresses/dress7.png" },
-  { id: "dress8", name: "Golden Regal Mermaid Gown", imageSrc: "assets/dresses/dress8.png" },
-  { id: "dress9", name: "Blush Radiance One-Shoulder Dress", imageSrc: "assets/dresses/dress9.png" }
+  { id: "dress1", name: "Golden Leaf Couture Dress", imageSrc: "dress1.png" },
+  { id: "dress2", name: "Crystal Blossom Gown", imageSrc: "dress2.png" },
+  { id: "dress3", name: "Black Royal Cape Gown", imageSrc: "dress3.png" },
+  { id: "dress4", name: "Sculpted Silver Asymmetric Gown", imageSrc: "dress4.png" },
+  { id: "dress5", name: "Chocolate Sequin Ball Gown", imageSrc: "dress5.png" },
+  { id: "dress6", name: "Ivory Floral Lace Couture Dress", imageSrc: "dress6.png" },
+  { id: "dress7", name: "Rose Gold Shimmer Cape Dress", imageSrc: "dress7.png" },
+  { id: "dress8", name: "Golden Regal Mermaid Gown", imageSrc: "dress8.png" },
+  { id: "dress9", name: "Blush Radiance One-Shoulder Dress", imageSrc: "dress9.png" }
 ];
 
 // ===============================
@@ -189,3 +189,4 @@ async function initializeApp() {
 }
 
 initializeApp();
+
