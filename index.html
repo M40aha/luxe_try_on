@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LUXE TRY-ON</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- MediaPipe Pose + Camera Utils -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose@0.5/pose.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3/camera_utils.js"></script>
+</head>
+<body>
+  <!-- ==== HEADER ==== -->
+  <header class="header">
+    <div class="header-inner">
+      <img src="logo.jpg" alt="Luxe Try-On Logo" class="logo" />
+      <div class="brand-text">
+        <h1 class="brand-title">LUXE TRY-ON</h1>
+        <p class="brand-subtitle">Virtual Couture Fitting Experience</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==== MAIN LAYOUT ==== -->
+  <main class="layout">
+    <!-- LEFT: Camera / Try-On -->
+    <section class="tryon">
+      <h2 class="section-title"> Virtual Fitting Room</h2>
+
+      <div class="camera-frame">
+        <!-- الفيديو (مخفي عن المستخدم، يستخدمه MediaPipe فقط) -->
+        <video id="webcam-video" autoplay playsinline muted></video>
+
+        <!-- الكانفاس اللي يطلع فيه الفيديو + الفستان -->
+        <canvas id="virtual-canvas"></canvas>
+
+        <!-- رسالة تحميل -->
+        <div id="loading-message" class="loading">
+          Allow camera access to start the virtual fitting room...
+        </div>
+      </div>
+      
+
+      <button id="capture-btn" class="capture-button" disabled>
+      
+      </button>
+    </section>
+
+    <!-- RIGHT: Dress Collection -->
+    <section class="collection">
+      <h2 class="section-title">Couture Collection</h2>
+      <div id="dresses-grid" class="dresses-grid"></div>
+    </section>
+  </main>
+
+  <img id="virtual-dress-img" alt="Selected dress" style="display: none" />
+
+  <!-- Main Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
+
